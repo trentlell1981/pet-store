@@ -37,7 +37,6 @@ public class PetStoreData {
 
 		for (Employee employee : petStore.getEmployees()) {
 			employees.add(new PetStoreEmployee(employee));
-
 		}
 	}
 
@@ -72,7 +71,6 @@ public class PetStoreData {
 			employeeLastName = employee.getEmployeeLastName();
 			employeePhone = employee.getEmployeePhone();
 			employeeJobTitle = employee.getEmployeeJobTitle();
-
 		}
 	}
 }

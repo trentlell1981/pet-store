@@ -8,13 +8,15 @@ import pet.store.entity.Customer;
 @NoArgsConstructor
 public class PetStoreCustomer {
 	private Long customerId;
-	private String customerName;
+	private String customerFirstName;
+	private String customerLastName;
 	private String customerEmail;
 	private String customerPhone;
 
 	public PetStoreCustomer(Customer customer) {
 		this.customerId = customer.getCustomerId();
-		this.customerName = customer.getCustomerFirstName() + " " + customer.getCustomerLastName();
+		this.customerFirstName = customer.getCustomerFirstName();
+		this.customerLastName = customer.getCustomerLastName();
 		this.customerEmail = customer.getCustomerEmail();
 		this.customerPhone = customer.getCustomerPhone();
 	}
